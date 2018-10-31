@@ -5,13 +5,15 @@ class Solution {
         Bird bird = new Bird();
         bird.walk();
 
-        Animal[] animals;
-        animals = new Animal[]{
+        Parrots parrot = new Parrots();
+        parrot.setAnimalLivesWith(new Cat());
+
+        Animal[] animals = new Animal[]{
                 new Bird(),
                 new Duck(),
                 new Chicken("normal"),
                 new Chicken("rooster"),
-                new Parrots(new Cat()),
+                parrot,
                 new Fish(),
                 new Shark("large", "Grey"),
                 new ClownFish("small", "orange"),

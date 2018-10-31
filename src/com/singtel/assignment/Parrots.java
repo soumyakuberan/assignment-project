@@ -1,7 +1,7 @@
 package com.singtel.assignment;
 
 class Parrots extends Bird {
-    private final Animal animalLivesWith;
+    private Animal animalLivesWith;
 
     public void sing() {
         if (animalLivesWith instanceof Cat) {
@@ -16,8 +16,10 @@ class Parrots extends Bird {
         }
     }
 
-    Parrots(Animal animalLivesWith) {
-        this.animalLivesWith = animalLivesWith;
+
+    public void setAnimalLivesWith(Animal animal){
+        animalLivesWith = animal;
+
     }
 }
 
