@@ -1,6 +1,6 @@
 package com.singtel.assignment;
 
-class Bird extends Animal implements Flyers,Singers {
+class Bird extends Animal implements Flyers, Singers {
 
     @Override
     public void fly() {

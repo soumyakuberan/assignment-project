@@ -1,6 +1,6 @@
 package com.singtel.assignment;
 
-public class Solution {
+class Solution {
     public static void main(String[] args) {
         Bird bird = new Bird();
         bird.walk();
@@ -13,8 +13,8 @@ public class Solution {
                 new Chicken("rooster"),
                 new Parrots(new Cat()),
                 new Fish(),
-                new Shark("large","Grey"),
-                new ClownFish("small","orange"),
+                new Shark("large", "Grey"),
+                new ClownFish("small", "orange"),
                 new Dolphin(),
                 new Dog(),
                 new ButterFly(),
@@ -24,23 +24,23 @@ public class Solution {
         int countOfFlyingAnimals = 0;
         int countOfSingingAnimals = 0;
         int countOfSwimmingAnimals = 0;
-        for(Animal animal: animals){
-            if(animal.canWalk() && !(animal instanceof Swimmers)){
-                countOfWalkingAnimals = countOfWalkingAnimals +1;
+        for (Animal animal : animals) {
+            if (animal.canWalk() && !(animal instanceof Swimmers)) {
+                countOfWalkingAnimals = countOfWalkingAnimals + 1;
             }
-            if(animal instanceof Flyers) {
+            if (animal instanceof Flyers) {
                 Flyers flyers = (Flyers) animal;
                 if (flyers.canFly()) {
                     countOfFlyingAnimals = countOfFlyingAnimals + 1;
                 }
             }
-            if(animal instanceof Singers){
+            if (animal instanceof Singers) {
                 Singers singers = (Singers) animal;
                 if (singers.canSing()) {
                     countOfSingingAnimals = countOfSingingAnimals + 1;
                 }
             }
-            if(animal instanceof Swimmers) {
+            if (animal instanceof Swimmers) {
                 Swimmers swimmer = (Swimmers) animal;
                 if (swimmer.canSwim()) {
                     countOfSwimmingAnimals = countOfSwimmingAnimals + 1;
@@ -48,10 +48,10 @@ public class Solution {
             }
 
         }
-        System.out.println("countOfWalkingAnimals"+countOfWalkingAnimals);
-        System.out.println("countOfFlyingAnimals"+countOfFlyingAnimals);
-        System.out.println("countOfSingingAnimals"+countOfSingingAnimals);
-        System.out.println("countOfSwimmingAnimals"+countOfSwimmingAnimals);
+        System.out.println("countOfWalkingAnimals" + countOfWalkingAnimals);
+        System.out.println("countOfFlyingAnimals" + countOfFlyingAnimals);
+        System.out.println("countOfSingingAnimals" + countOfSingingAnimals);
+        System.out.println("countOfSwimmingAnimals" + countOfSwimmingAnimals);
     }
 
 }

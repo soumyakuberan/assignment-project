@@ -1,13 +1,17 @@
 package com.singtel.assignment;
 
-public class Fish extends Animal implements Swimmers{
-protected String size;
-protected String color;
+public class Fish extends Animal implements Swimmers {
+    String size;
+    String color;
 
-public void Fish(String size,String color){
-        this.size=size;
-        this.color=color;
-}
+    public Fish(){
+
+    }
+
+    Fish(String size, String color) {
+        this.size = size;
+        this.color = color;
+    }
 
     @Override
     public void swim() {

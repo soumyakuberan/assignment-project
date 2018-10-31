@@ -1,7 +1,7 @@
 package com.singtel.assignment;
 
-class Duck extends Bird implements Swimmers{
-    public void sing(){
+class Duck extends Bird implements Swimmers {
+    public void sing() {
         System.out.println("Quack Quack");
     }
 
